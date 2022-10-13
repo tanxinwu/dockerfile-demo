@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.base.dockerfiledemo.mapper.StepMapper">
+  <resultMap id="BaseResultMap" type="com.base.dockerfiledemo.model.Step">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="creat_time" jdbcType="TIMESTAMP" property="creatTime" />
+    <result column="creat_user" jdbcType="BIGINT" property="creatUser" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="modify_user" jdbcType="BIGINT" property="modifyUser" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from step
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.base.dockerfiledemo.model.Step">
+    insert into step (id, code,
+      creat_user,  modify_user
+      )
+    values (#{record.id,jdbcType=BIGINT}, #{record.code,jdbcType=VARCHAR},
+      #{record.creatUser,jdbcType=BIGINT}, #{record.modifyUser,jdbcType=BIGINT}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.base.dockerfiledemo.model.Step">
+    update step
+    set code = #{code,jdbcType=VARCHAR},
+
+      creat_user = #{creatUser,jdbcType=BIGINT},
+
+      modify_user = #{modifyUser,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select id, code, creat_time, creat_user, modify_time, modify_user
+    from step
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, code, creat_time, creat_user, modify_time, modify_user
+    from step
+  </select>
+</mapper>
