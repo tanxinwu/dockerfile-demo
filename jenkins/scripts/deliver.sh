@@ -1,1 +1,1 @@
-sudo java -jar ./dockerfile-demo-0.0.1-SNAPSHOT.jar $
+sudo java -jar ../../taget/dockerfile-demo-0.0.1-SNAPSHOT.jar $
