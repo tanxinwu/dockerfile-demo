@@ -23,6 +23,8 @@
         <shardingsphere-jdbc-core.version>5.0.0</shardingsphere-jdbc-core.version>
     </properties>
     <dependencies>
+
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
