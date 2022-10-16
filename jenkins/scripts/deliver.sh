@@ -1,7 +1,7 @@
 
 JENKINS_NODE_COOKIE=dontKillMe
 echo "  =====关闭Java应用======"
-PROCESS=`ps -ef |grep java |grep -v grep|grep xxx.jar|awk '{print $2}'`
+PROCESS=`ps -ef |grep java |grep -v grep|grep dockerfile-demo-0.0.1-SNAPSHOT.jar|awk '{print $2}'`
 for i in $PROCESS
 do
   echo "Kill the $1 process [ $i ]"
