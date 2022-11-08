@@ -1,0 +1,3 @@
+2022-11-08 16:28:39.185  INFO 24596 --- [main] c.a.d.xa.XATransactionalResource         : resource-1-ds-0: refreshed XAResource
+2022-11-08 16:28:39.191  INFO 24596 --- [main] c.a.d.xa.XATransactionalResource         : resource-2-ds-1: refreshed XAResource
+2022-11-08 16:28:39.784  INFO 24596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'

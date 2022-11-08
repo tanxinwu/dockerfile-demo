@@ -1,0 +1,3 @@
+2022-11-08 15:18:23.720  INFO 21352 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/maven-repository/org/apache/shardingsphere/shardingsphere-transaction-xa-atomikos/5.0.0/shardingsphere-transaction-xa-atomikos-5.0.0.jar!/transactions.properties
+2022-11-08 15:18:23.724  WARN 21352 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice

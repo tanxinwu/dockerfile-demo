@@ -15,4 +15,6 @@ public interface StepService {
     List<Step> selectAll();
 
     int updateByPrimaryKey(Step record);
+
+    String trans(Step record);
 }

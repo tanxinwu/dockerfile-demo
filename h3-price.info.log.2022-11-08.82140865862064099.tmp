@@ -1,0 +1,4 @@
+2022-11-08 15:16:47.158  INFO 23536 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2022-11-08 15:16:47.159  INFO 23536 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.allow_subtransactions = true
+2022-11-08 15:16:47.159  INFO 23536 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.recovery_delay = 300000
+2022-11-08 15:16:47.159  INFO 23536 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.automatic_resource_registration = false

@@ -1,0 +1,2 @@
+2022-11-08 16:25:58.523  INFO 25908 --- [main] .c.NacosValueAnnotationBeanPostProcessor : true was destroying!
+2022-11-08 16:25:58.524  INFO 25908 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
