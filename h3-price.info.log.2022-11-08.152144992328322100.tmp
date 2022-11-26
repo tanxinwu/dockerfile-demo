@@ -1,2 +1,0 @@
-2022-11-08 16:25:33.605  WARN 21352 --- [Thread-19] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-2022-11-08 16:25:33.605  WARN 21352 --- [Thread-14] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient

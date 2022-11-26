@@ -1,4 +1,0 @@
-2022-11-08 15:16:45.382  INFO 23536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2022-11-08 15:16:45.396  INFO 23536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-08 15:16:45.396  INFO 23536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
-2022-11-08 15:16:45.528  INFO 23536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext

@@ -21,12 +21,14 @@ public class StepServiceImpl implements StepService {
     private final StepMapper stepMapper;
     @Override
     @Transactional(rollbackFor = Exception.class)
+    @ShardingSphereTransactionType(value = TransactionType.XA)
     public int deleteByPrimaryKey(Long id) {
         return stepMapper.deleteByPrimaryKey(id);
     }
 
     @Override
-    @Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class,propagation = Propagation.REQUIRES_NEW)
+    @ShardingSphereTransactionType(value = TransactionType.XA)
     public int insert(Step record) {
         return stepMapper.insert(record);
     }
@@ -42,23 +44,27 @@ public class StepServiceImpl implements StepService {
     }
 
     @Override
-    @Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class,propagation = Propagation.REQUIRES_NEW)
+    @ShardingSphereTransactionType(value = TransactionType.XA)
     public int updateByPrimaryKey(Step record) {
-        return stepMapper.updateByPrimaryKey(record);
+        int result = stepMapper.updateByPrimaryKey(record);
+        int i = 9/0;
+        return result;
     }
 
     @Override
     @Transactional(rollbackFor = Exception.class)
-    @ShardingSphereTransactionType(value = TransactionType.LOCAL)
+    @ShardingSphereTransactionType(value = TransactionType.XA)
     public String trans(Step record) {
-        stepMapper.updateByPrimaryKey(record);
+        //REQUIRED
+        // outer transaction
         Step insert = new Step();
         BeanUtils.copyProperties(record,insert);
-        insert.setId(17L);
-        int result = stepMapper.insert(insert);
+        insert.setId(19L);
+        int result = insert(insert);
         log.info("插入结果：{}",result);
-        int i = 9/0;
+        // inner transaction throw Exception will be affect outer transaction
+        updateByPrimaryKey(record);
         return "success";
-
     }
 }

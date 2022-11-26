@@ -1,4 +1,0 @@
-2022-11-08 15:18:23.730  INFO 21352 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.oltp_max_retries = 5
-2022-11-08 15:18:23.731  INFO 21352 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.client_demarcation = false
-2022-11-08 15:18:23.731  INFO 21352 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.threaded_2pc = false
-2022-11-08 15:18:23.731  INFO 21352 --- [main] c.a.icatch.provider.imp.AssemblerImp     : USING: com.atomikos.icatch.serial_jta_transactions = false

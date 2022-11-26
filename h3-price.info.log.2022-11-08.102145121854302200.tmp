@@ -1,8 +1,0 @@
-2022-11-08 16:27:43.142  INFO 3672 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Loaded jar:file:/D:/maven-repository/org/apache/shardingsphere/shardingsphere-transaction-xa-atomikos/5.1.0/shardingsphere-transaction-xa-atomikos-5.1.0.jar!/transactions.properties
-2022-11-08 16:27:43.146  WARN 3672 --- [main] c.a.icatch.provider.imp.AssemblerImp     : Thanks for using Atomikos! This installation is not registered yet. 
-REGISTER FOR FREE at http://www.atomikos.com/Main/RegisterYourDownload and receive:
-- tips & advice 
-- working demos 
-- access to the full documentation 
-- special exclusive bonus offers not available to others 
-- everything you need to get the most out of using Atomikos!
